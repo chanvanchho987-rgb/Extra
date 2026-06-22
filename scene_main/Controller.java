@@ -1,3 +1,5 @@
+package scene_main;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -27,7 +29,6 @@ public class Controller {
 
     @FXML
     void initialize() {
-        
 
     }
 
