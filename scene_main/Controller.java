@@ -3,10 +3,15 @@ package scene_main;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.embed.swt.FXCanvas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.scene.Scene;
+
 
 public class Controller {
 
@@ -28,10 +33,20 @@ public class Controller {
     @FXML
     void goto_output(ActionEvent event) throws IOException {
         // Implementation for navigating to output scene
+
         var stage = (Stage) label_data.getScene().getWindow();
+
         var view_output = getClass().getResource("../scene_output/View.fxml");
         var controller_output = new scene_output.Controller();
 
+        var loader = new FXMLLoader();
+        loader.setLocation(view_output);
+        loader.setController(controller_output);
+
+        var scene = loader.load();
+
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

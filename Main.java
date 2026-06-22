@@ -18,7 +18,7 @@ public class Main extends Application {
         loader.setLocation(view_main);
         loader.setController(controller_main);
 
-        // 
+        //
         var scene = new Scene(loader.load());
 
         //
