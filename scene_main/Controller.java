@@ -26,6 +26,20 @@ public class Controller {
     void goto_input(ActionEvent event) throws IOException {
         // Implementation for navigating to input scene
 
+        var stage = (Stage) label_data.getScene().getWindow();
+        
+        var view_input = getClass().getResource("../scene_input/View.fxml");
+        var controller_input = new scene_input.Controller();
+
+        var loader = new FXMLLoader();
+        loader.setLocation(view_input);
+        loader.setController(controller_input);
+
+        var scene = new Scene(loader.load());
+
+        
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
