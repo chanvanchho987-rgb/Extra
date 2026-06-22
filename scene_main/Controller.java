@@ -27,7 +27,7 @@ public class Controller {
         // Implementation for navigating to input scene
 
         var stage = (Stage) label_data.getScene().getWindow();
-        
+
         var view_input = getClass().getResource("../scene_input/View.fxml");
         var controller_input = new scene_input.Controller();
 
@@ -37,7 +37,6 @@ public class Controller {
 
         var scene = new Scene(loader.load());
 
-        
         stage.setScene(scene);
         stage.show();
     }

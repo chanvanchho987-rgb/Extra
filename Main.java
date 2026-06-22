@@ -22,7 +22,6 @@ public class Main extends Application {
         var scene = new Scene(loader.load());
 
         //
-        // stage.getIcons().add(new
         // javafx.scene.image.Image(getClass().getResourceAsStream("asset/Logo-ITC-PNG.png")));
         stage.setScene(scene);
         stage.show();
