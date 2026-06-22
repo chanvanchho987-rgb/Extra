@@ -43,7 +43,9 @@ public class Controller {
 
     @FXML
     void initialize() {
+
         label_output_data.setText(Global.data);
+        
     }
 
 }
