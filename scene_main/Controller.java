@@ -12,7 +12,6 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
-
 public class Controller {
 
     @FXML
@@ -43,7 +42,7 @@ public class Controller {
         loader.setLocation(view_output);
         loader.setController(controller_output);
 
-        var scene = loader.load();
+        var scene = new Scene(loader.load());
 
         stage.setScene(scene);
         stage.show();
