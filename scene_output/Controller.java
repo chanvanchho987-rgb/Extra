@@ -3,6 +3,8 @@ package scene_output;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import global.Global;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -41,7 +43,7 @@ public class Controller {
 
     @FXML
     void initialize() {
-
+        label_output_data.setText(Global.data);
     }
 
 }
