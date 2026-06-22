@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import global.Global;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -62,6 +63,7 @@ public class Controller {
 
     @FXML
     void initialize() {
+        label_data.setText(Global.data);
 
     }
 
